@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <h2>Various Console Methods</h2>
+    </head>
+    <body>
+        <script>
+    /*  console.log() method
+    it is used to print the output in the console. 
+    */ 
+    console.log("This is a print message");
+
+    /*  console.error() method.
+    Used to log error message to the console. 
+    Useful in testing of code.
+    By default the error message will be highlighted with red color.
+    */ 
+    console.error("This is a error message");
+
+    /*  console.warn method.
+    Used to log warning message to the console. 
+    By default the warning message will be highlighted with yellow color.
+    */ 
+    console.warn("This is a warning message");
+
+    /* console.clear method.
+    Used to clear the console.
+    */
+    console.clear();
+
+    //console.time and console.timeEnd method 
+    console.time('abc');
+    console.log("This method calculates ");
+    console.log("The time taken for this block to run");
+    console.timeEnd('abc');
+
+    /* console.table method.
+    This method allows to generate a table inside a console.
+    The input must be an array or object 
+    */
+    console.table({"a":"10","b":"abc"});
+
+    /*console.count method.
+    This method is used to print the count   
+    */
+    for(let i=0;i<5;i++){ 
+    console.count(i); 
+    }
+
+    /*console.group and groupEnd method.
+    group() and groupEnd() methods of the console object 
+    allows us to group contents in a separate block,
+    */    
+    console.group('simple message'); 
+    console.warn('warning! message'); 
+    console.error('error message'); 
+    console.groupEnd('simple');     
+
+        </script>
+    </body>
+</html>
