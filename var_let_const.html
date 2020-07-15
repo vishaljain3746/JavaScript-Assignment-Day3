@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <h2>Difference between var , let and const</h2>   
+    </head>
+    <body>
+        <script>
+    // About var keyword         
+    var a =20;
+    console.log(a);     // output 20
+    if(true){
+        var a=10;
+        console.log(a); // output 10
+    }
+    console.log(a);     // output 10
+    /* Hence if we use var(keyword) then if we if change 
+    local variable then global variable also changes */
+
+    //About let keyword
+    let x=20;
+    console.log(x);     //output 20
+    if(true){
+        let x=10;      
+        console.log(x); //output 10
+    }
+    console.log(x);     //output 20
+    /* Hence if use let(keyword) then if local variable changes
+    but it will not effect the global variable*/
+
+    //About const keyword
+    const y=20;
+    console.log(y);     //output 20
+    y=10;               //throws type error
+    console.log(y);     
+    /* In constant keyword if the variable is assign then 
+    further it cannot change*/
+        </script>
+    </body>    
+</html>
